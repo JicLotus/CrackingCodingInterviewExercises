@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="3\3_2.cs" />
+    <Compile Include="3\3_3.cs" />
+    <Compile Include="3\3_4.cs" />
     <Compile Include="8\8_2.cs" />
     <Compile Include="8\8_3.cs" />
     <Compile Include="8\8_4.cs" />
@@ -55,7 +57,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="1\" />
+    <Folder Include="2\" />
+    <Folder Include="4\" />
+    <Folder Include="Hard\" />
+    <Folder Include="Moderate\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

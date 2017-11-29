@@ -1,4 +1,5 @@
 ﻿using Exercises;
+using Exercises._3;
 using Exercises._8;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace Exercises
     {
         static void Main(string[] args)
         {
-            Exercise ex = new _8_4();
+            Exercise ex = new _3_3();
 
             Console.Write(ex.result());
         }
