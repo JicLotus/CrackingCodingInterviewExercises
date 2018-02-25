@@ -4,17 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercises._8
+namespace Exercises._1
 {
-    public class _8_9 : Exercise
+    class _1_9
     {
-
-        public string result()
-        {
-
-
-            return "";
-        }
-
     }
 }

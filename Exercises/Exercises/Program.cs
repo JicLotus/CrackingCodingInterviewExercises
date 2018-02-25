@@ -13,7 +13,7 @@ namespace Exercises
     {
         static void Main(string[] args)
         {
-            Exercise ex = new _3_3();
+            Exercise ex = new _1._1_4();
 
             Console.Write(ex.result());
         }
