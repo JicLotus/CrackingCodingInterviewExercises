@@ -13,9 +13,15 @@ namespace Exercises
     {
         static void Main(string[] args)
         {
-            Exercise ex = new _1._1_4();
 
+
+
+            
+
+            /*
+            Exercise ex = new _8._8_9();
             Console.Write(ex.result());
+            */
         }
     }
 }
