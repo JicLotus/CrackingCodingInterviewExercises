@@ -9,56 +9,57 @@ namespace Exercises._8
     public class _8_9 : Exercise
     {
 
+        Dictionary<int, List<string>> solutions { get; set; }
 
-        private List<string> buildBasicsSolutions(int n)
+
+        private List<string> buildConsecutiveSolutions(int n)
         {
-            List<string> validPairs = new List<string>();
-            
-            var firstPair = "";
-            for (var i = 0; i < n; i++)
+            if (solutions.ContainsKey(n))
             {
-                firstPair += "()";
+                return solutions[n];
             }
-            validPairs.Add(firstPair);
 
-            if (n > 1)
+
+            var beforeSolution = buildConsecutiveSolutions(n-1);
+            var actualSolution = new List<string>();
+
+            foreach(var tempSolution in beforeSolution)
             {
-                var scndPairs = "";
-                for (var i = 0; i < n; i++)
+                
+                for (var i =0;i<tempSolution.Length;i++)
                 {
-                    scndPairs = "(" + scndPairs + ")";
+                    var tempString = tempSolution;
+                    tempString = tempString.Insert(i + 1, "()");
+
+                    if (!actualSolution.Contains(tempString))
+                    {
+                        actualSolution.Add(tempString);
+                    }
                 }
-                validPairs.Add(scndPairs);
             }
 
-            if (n > 2)
-            {
 
+            solutions[n] = actualSolution;
 
-            }
-
-            return validPairs;
+            return solutions[n];
         }
 
-
-        public string validNPairParentesis(int n)
+        private void buildSolution(int n)
         {
-            List<string> validPairs = new List<string>();
-            validPairs = buildBasicsSolutions(n);
-            
-            if (n > 3)
-            {
+            solutions = new Dictionary<int, List<string>>();
+            solutions[1] = new List<string>();
+            solutions[1].Add("()");
 
-            }
+            buildConsecutiveSolutions(n);
             
-            return string.Join(",", validPairs);
         }
-
 
         public string result()
         {
             var n = 3;
-            return validNPairParentesis(n) + "\n";
+            buildSolution(n);
+            
+            return string.Join(",",solutions[n]);
         }
 
     }
