@@ -52,7 +52,14 @@
     <Compile Include="3\3_3.cs" />
     <Compile Include="3\3_4.cs" />
     <Compile Include="3\3_5.cs" />
+    <Compile Include="4\4_2.cs" />
     <Compile Include="4\4_1.cs" />
+    <Compile Include="4\4_10.cs" />
+    <Compile Include="4\4_11.cs" />
+    <Compile Include="4\4_12.cs" />
+    <Compile Include="4\4_4.cs" />
+    <Compile Include="4\4_5.cs" />
+    <Compile Include="4\4_8.cs" />
     <Compile Include="4\4_9.cs" />
     <Compile Include="8\8_12.cs" />
     <Compile Include="8\8_2.cs" />
