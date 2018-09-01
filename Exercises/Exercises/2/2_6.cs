@@ -16,16 +16,11 @@ namespace Exercises._2
 
     class _2_6 : Exercise
     {
-
         public string result()
         {
             var elements = new string[] { "B","A","C","A","B" };
-
             var stack = buildStack<string>(elements);
-
             var linkedList = buildLinkedList<string>(elements);
-            
-
             return isPalindrome<string>(linkedList,elements.Length,stack).ToString();
         }
 

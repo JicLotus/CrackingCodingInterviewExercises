@@ -61,12 +61,15 @@
     <Compile Include="4\4_5.cs" />
     <Compile Include="4\4_8.cs" />
     <Compile Include="4\4_9.cs" />
+    <Compile Include="8\8_12_book.cs" />
     <Compile Include="8\8_12.cs" />
     <Compile Include="8\8_2.cs" />
     <Compile Include="8\8_3.cs" />
     <Compile Include="8\8_4.cs" />
     <Compile Include="8\8_5.cs" />
+    <Compile Include="8\8_7.cs" />
     <Compile Include="8\8_9.cs" />
+    <Compile Include="APacmanProblem.cs" />
     <Compile Include="Exercise.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

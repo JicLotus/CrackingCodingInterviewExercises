@@ -15,8 +15,7 @@ namespace Exercises._1
         {
             var str = "Tact Coa";
             //var str = "Hola";
-            var pp = new palindromePermutation(str);
-            
+            var pp = new palindromePermutation(str);        
             return pp.isPermutationPalindrome().ToString();
         }
     }

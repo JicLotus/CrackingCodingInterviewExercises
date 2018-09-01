@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercises._4
+namespace Exercises
 {
-    class _4_11 : Exercise
+    class APacmanProblem : Exercise
     {
 
-        
         public string result()
         {
-            var tree = TreeBulder.buildTree(new int[] { 1, 2,3,4 });
+
+
 
             return "";
         }
